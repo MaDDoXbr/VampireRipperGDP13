@@ -23,8 +23,11 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	
+
+				UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "GAS")
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
+	
+				UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "GAS")
 	TObjectPtr<UTagNotificationComponent> TagNotifier;
 	
 public:	
